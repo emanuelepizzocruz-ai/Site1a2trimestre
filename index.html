@@ -44,16 +44,19 @@
         <h2>Meu primeiro trabalho</h2>
         <p>Sejam bem vindos ao meu blog aqui eu irei ensinar como fazer crochê de forma facil e rapida e que possa render dinheiro</p>
         <p>por:Emanuele Eduarda</p>
-        <botton>🧶<span>0</span></botton>
+        <botton>🖤<span>0</span></botton>
+        <botton>💔<span>0</span></botton>
     </main>
 </body>
 <script>
-    const botao = document. querySelector ("button");
-    botao. add EvenListener ("click,botaoClicado");
+    const botoes = document. querySelectorAll ("main button");
+    botoes.forEach(function (botao) {
+     botao. addEvenListener ("click,botaoClicado");
     function botaoClicado () {
     console. log ("fui clicado");
     let texto = botao. querySelector ("span");
     texto. textContent++;
     }
-    </script>
+    });
+        </script>
 </html>
