@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu blog</title>
     <style>
-        header{
+        header {
             background-color: #a29997;
             color: #f8f0f0;
-            text-align:center;
+            text-align: center;
             max-width: 800px;
             margin: 0 auto;
             border: 5px solid rgb(246, 235, 235);
-            padding:16px ;
+            padding: 16px;
 
-     }
-     main{
+        }
+
+        main {
             background-color: #f8f0f0;
-            color:#a69d9b; 
-            text-align:center;
+            color: #a69d9b;
+            text-align: center;
             max-width: 800px;
             margin: 0 auto;
             border: 5px solid rgb(5, 4, 4);
-            padding:16px ;
+            padding: 16px;
         }
 
-        img{
+        img {
             width: 370x;
             height: 250px;
-    }
-
+        }
     </style>
 
 </head>
+
 <body>
     <header>
         <h1>Vamos aprender crochê??</h1>
@@ -40,23 +42,26 @@
     </header>
 
     <main>
-        <img src="imagem-blog.png" alt="Bolsa de crochê tiracolo na cor preta, feita com fio de malha espesso, sobre uma mesa de madeira. A bolsa tem formato arredondado, fechamento com aba e botão metálico, e alça longa do próprio fio de malha. Ao lado, estão um rolo de fio de malha preto, uma agulha de crochê de madeira e uma tesoura vintage.">
+        <img src="imagem-blog.png"
+            alt="Bolsa de crochê tiracolo na cor preta, feita com fio de malha espesso, sobre uma mesa de madeira. A bolsa tem formato arredondado, fechamento com aba e botão metálico, e alça longa do próprio fio de malha. Ao lado, estão um rolo de fio de malha preto, uma agulha de crochê de madeira e uma tesoura vintage.">
         <h2>Meu primeiro trabalho</h2>
-        <p>Sejam bem vindos ao meu blog aqui eu irei ensinar como fazer crochê de forma facil e rapida e que possa render dinheiro</p>
+        <p>Sejam bem vindos ao meu blog aqui eu irei ensinar como fazer crochê de forma facil e rapida e que possa
+            render dinheiro</p>
         <p>por:Emanuele Eduarda</p>
-        <botton>🖤<span>0</span></botton>
-        <botton>💔<span>0</span></botton>
+        <button>🖤<span>0</span></button>
+        <button>💔<span>0</span></button>
     </main>
 </body>
 <script>
-    const botoes = document. querySelectorAll ("main button");
+    const botoes = document.querySelectorAll("main button");
     botoes.forEach(function (botao) {
-     botao. addEvenListener ("click,botaoClicado");
-    function botaoClicado () {
-    console. log ("fui clicado");
-    let texto = botao. querySelector ("span");
-    texto. textContent++;
-    }
+        botao.addEventListener("click",botaoClicado);
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            texto.textContent++;
+        }
     });
-        </script>
+</script>
+
 </html>
